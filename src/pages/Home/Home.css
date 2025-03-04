@@ -1,0 +1,103 @@
+.home {
+    padding: 0px 10px;
+    padding-bottom: 100px
+}
+.hero {
+    max-width: 600px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+.hero h1 {
+    font-size: max(4vm, 36px);
+}
+.hero p {
+    width: 75%;
+    color: #e3e3e3;
+    line-height: 1.5;
+}
+.hero form {
+    padding:8px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.hero input {
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding-left:10px ;
+}
+.hero button {
+    border: none;
+    background: #7927FF;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.crypto-table {
+    max-width: 900px;
+    margin: auto;
+    background: linear-gradient(#666666 ,#2F4F4F, #777777);
+    border-radius: 15px ;
+}
+.crypto-table .table-layout {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid #DDDDDD;
+}
+.market-cap{
+    text-align: right ;
+}
+.table-layout:last-child {
+    border: none;
+}
+.table-layout div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.table-layout img {
+    width: 35px;
+}
+.table-layout .green {
+    color: #00D515;
+    text-align: center;
+}
+.table-layout .red {
+    color: #FF3333;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .table-layout {
+        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    }
+    .market-cap {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .table-layout div img {
+       width: 25px
+    }
+    .table-layout {
+        font-size: 13px;
+    }
+    .hero form input {
+        width: 100px;
+    }
+}
